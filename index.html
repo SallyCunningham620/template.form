@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Template Form</h2>
+    <div>
+        <form novalidate class="form" id="form">
+            <div class="label-inputs">
+                <label for="email">
+                    <span>Please enter an email address: *</span>
+                    <input type="email" id="email" name="email" required minlength="8" maxlength="80" placeholder="abc123@example.com"/>
+                    <span class="error" aria-live="polite"></span>
+                </label>
+                <label for="country">
+                    <span>Country: *</span>
+                    <select id="country" name="country" autocomplete="country" required>
+                        <option value="">Select a country</option>
+                        <option value="US">United States</option>
+                        <option value="CA">Canada</option>
+                        <option value="GB">United Kingdom</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <span class="error" aria-live="polite"></span>
+                </label>
+                <label for="postal-code">
+                    <span>Postal Code: *</span>
+                    <input type="text" id="postal-code" name="postal-code" autocomplete="postal-code" inputmode="numeric" minlength="3">
+                    <span class="error" aria-live="polite"></span>
+                </label>
+                <label for="password">
+                    <span>Password: *</span>
+                    <input type="password" id="password" minlength="8" maxlength="30" name="password" autocomplete="new-password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" required>
+                    <span class="error" aria-live="polite"></span>
+                </label>
+                <label for="password-confirm">
+                    <span>Confirm Password: *</span>
+                    <input type="password" id="password-confirm" name="password-confirm" autocomplete="new-password" required>
+                    <span class="error" aria-live="polite"></span>
+                </label>
+            </div>
+            <button>Submit</button>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 50px;
+    border: 1px solid darkblue;
+    padding: 20px;
+}
+h2 {
+    padding: 20px;
+}
+
+.label-inputs {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+label {
+    padding: 10px;
+    border: 1px solid black;
+    margin: 10px;
+}
+
+input {
+    border: 1px solid black;
+}
+
+button {
+    font-size: 1em;
+    letter-spacing: 0.2rem;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(235, 218, 218);
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 2px 2px 4px 2px #7a94b8;
+}
+
+input:internal-autofill-selected {
+    background-color: #ddffdd;
+}
+
+input:user-valid, select:user-valid {
+    border-color: green;
+    background-color: #ddffdd; 
+}
+
+input:user-invalid, select:user-invalid {
+    border-color: red;
+    background-color: #ffdddd;
+}
